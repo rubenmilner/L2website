@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="Styles.css">
+    <title>Robot Invasion</title>
+
+    <script>
+        var options = ['duck and cover', 'dismantel the destroyed bots', 'build your own robot', 'kill robots for fun', 'sleep']
+
+        function testing() {
+            var rand = Math.floor(Math.random() * options.length);
+            document.getElementById('text').innerHTML = options[rand];
+
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="left">
+            <nav>
+                <a href="index.html">home</a>
+                <a href="page2.html">page 2</a>
+                <a href="page3.html">page 3</a>
+
+            </nav>
+        </div>
+
+
+
+    
+    <section class="JS">
+        <div class="buttonP">
+            <button onclick="testing()">Push me for something to do.</button>
+            <p id="text"></p>
+        </div>
+        </section>
+    </div>
+</body>
